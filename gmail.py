@@ -62,9 +62,9 @@ def process_gmail_messages(config, messages, gmail_service):
                 )
     return row_to_start_inserting_at
 
-def main():
-    '''Shows basic usage of the Gmail API.
-    Lists the user's Gmail labels.
+def execute():
+    '''
+    This function will get the Gmail service and process the messages.
     '''
     try:
         config = get_config()
@@ -85,4 +85,4 @@ def main():
         print(f'An error occurred: {error}')
 
 if __name__ == '__main__':
-    main()
+    execute()
